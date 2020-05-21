@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h> 
-#include <math.h>
+
 
 void deleteEl(int *arr,int size,int indx);
 int deleteChars(char *str,int size,int start,int finish);

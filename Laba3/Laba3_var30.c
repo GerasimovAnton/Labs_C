@@ -166,7 +166,6 @@ int findMax(int x, int y,int rows,int cols, double **matrix)
         }
     }
 
-    printf("\nmax = %lf\n",max);
     if(max  < EPS) return 0;
     return 1;
 }

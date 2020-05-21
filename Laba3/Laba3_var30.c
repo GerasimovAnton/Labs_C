@@ -17,6 +17,7 @@ int main()
 
     do
     {
+        printf("\nThis program finds a solution to a system of linear equations by the Gauss method\n ");
         printf("\nENTER N ");
         scanf("%i",&n);
         printf("ENTER M ");

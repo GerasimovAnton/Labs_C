@@ -69,7 +69,7 @@ int main()
 int deleteChars(char *str,int size,int start,int finish)
 {
     int newSize = 0;
-    for (size_t i = 0,p = 0; i < size; i++)
+    for (size_t i = 0; i < size; i++)
     {
         if(i > start && i < finish && !(str[i] == '(' || str[i] == ')')) continue;
         str[newSize++] = str[i];

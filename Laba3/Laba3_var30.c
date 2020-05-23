@@ -51,9 +51,9 @@ int main()
         //(2,5,7)
         */ 
 
-        for (size_t i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
-            for (size_t j = 0; j < m; j++)
+            for (int j = 0; j < m; j++)
             {
                 printf("Matrix[%i][%i] = ",i,j);
                 scanf("%lf",&matrix[i][j]);
@@ -69,11 +69,11 @@ int main()
             DrawMatrix(n,m,matrix);
             int p = 0; 
 
-             for (size_t j = 0; j < n; j++)
+             for (int j = 0; j < n; j++)
              {
                 ans[p]  = matrix[n - j - 1][m - 1];
 
-                for (size_t i = 0; i < j; i++)
+                for (int i = 0; i < j; i++)
                 {
                     ans[p] -= matrix[n - j - 1][m - i -2] * ans[i];
                 }
@@ -81,7 +81,7 @@ int main()
              }
 
              printf("\n ANSWER = ( ");
-             for (size_t i = 0; i < p; i++)
+             for (int i = 0; i < p; i++)
              {
                 printf("%lf ",ans[i]);
              }
@@ -89,7 +89,7 @@ int main()
         }
 
         free(ans);
-        for (size_t i = 0; i < n; i++) free(matrix[i]);
+        for (int i = 0; i < n; i++) free(matrix[i]);
         free(matrix);
         
         printf("\nwould you like to continue? Y/N\n");
@@ -104,9 +104,9 @@ int main()
 void DrawMatrix(int n,int m, double **matrix)
 {
     printf("-------------------------------\n");
-    for (size_t i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (size_t j = 0; j  < m; j++)
+        for (int j = 0; j  < m; j++)
         {
             printf("%lf ",matrix[i][j]);
         }
